@@ -1,0 +1,88 @@
+body{
+    font-family: 'Montserrat',sans-serif;
+    color: #212529;
+    background-color: white;
+    letter-spacing: 1px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Header*/
+header{
+    padding: 20px 0;
+    background-color: #4e2a84;
+}
+ .header__content{
+     width: 70%;
+     margin: 0 auto;
+
+ }
+ .header__content ul {
+     list-style: none;
+ }
+ .header__content ul a{
+     text-decoration: none;
+     color: white;
+     font-size: 0.75rem;
+     font-weight: 700;
+     letter-spacing: 2px;
+     transition:  all 1s ;
+ }
+ .header__content ul li {
+     margin: 0 16px;
+     display: inline;
+ }
+ .header__content p{
+     color:white;
+     font-size: 2.3rem;
+ }
+ .header__content {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .header__content ul a:hover{
+     color: #ff0e83;
+ }
+ .header__content ul a .active{
+     color: pink;
+ }
+
+
+     .carousel{
+         background-image:url("../img/b3.jpg") ;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+         color: white;
+         text-align: center;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+     .carousel__content h1{
+         font-size: 3.5rem;
+     }
+     button{
+         background-color: #ff0e83;
+         border: 1px solid white;
+         color: white;
+         border-radius :5px ;
+         font-size: 0.875rem;
+         padding: 13px 32px;
+         cursor: pointer;
+         letter-spacing: 1px;
+         transition:  all 1s ;
+     }
+     button:hover{
+         background-color: white;
+         color: black;
+     }
+     .carousel__content p{
+         font-size: 1.1rem;
+         padding:23px 0 ;
+     }
+
