@@ -1,0 +1,55 @@
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+.header__top{
+    background-color: #ff4f81;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.header__top a{
+    text-decoration: none;
+    font-size: 14px;
+    margin-right:20px ;
+
+}
+.header__right a{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    margin-left: -0.75rem;
+}
+.navInstruction a{
+color: black;
+
+}
+.navInstruction .navbar-brand p:first-child{
+    font-size: 36px;
+    font-weight: bold;
+}
+.navInstruction .navbar-brand p:first-child i{
+    transform: skewX(-10deg);
+}
+.navInstruction .navbar-brand p:last-child{
+    font-size: 11px;
+    color:pink;
+    letter-spacing: 3px;
+    font-weight: bold;
+} 
+#navbarNavDropdown .nav-link{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transform:all 0.5s ;
+}
+#navbarNavDropdown .nav-item:hover .nav-link{
+    color: pink;
+}

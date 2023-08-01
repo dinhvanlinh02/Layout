@@ -1,0 +1,168 @@
+
+*{
+    box-sizing: border-box;
+}
+
+
+html,body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.clear{
+    clear: both;
+}
+/*HEADER*/
+.header img{
+width: 250px;
+}
+.header ul{
+    list-style: none; 
+    background-color: black;
+    padding: 15px 0;
+    margin: 5px 0 10px;
+}
+.header a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+}
+.header ul li{
+    display: inline;
+    
+    margin: 0 10px;
+   
+}
+/*CAROUSEL*/
+.carousel{
+    background-image: url("../img/slider_1.jpg");
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    
+}
+/*INTRO*/
+.intro__text{
+    font-size: 15px;
+    margin: 25px 0 40px;
+}
+.intro__text span{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.intro__left,.intro__right{
+    float: left;
+    width: 50%;
+}
+.intro__smallItem{
+    float: left;
+    width: 50%;
+}
+.intro__item img{
+    display: block;
+    width: 100%;
+}
+.intro__item{
+padding: 0 15px 25px;
+}
+
+
+/*PRODUCTS*/
+.products{
+   /* margin-bottom: 70px;*/
+}
+.products h2{
+    text-align: center;
+    font-size: 30px;
+}
+.products__item{
+float: left;
+width: 25%;
+padding: 0 10px;
+}
+.products__item img{
+    width: 100%;
+}
+.products__item h3{
+    font-size: 25px;
+}
+.products__item p{
+    font-size: 13px;
+}
+.products__item button{
+    background: red;
+    border: 1px solid red;
+  color: white;
+  padding: 5px 10px;
+  border-radius:3px ;
+  margin-top: 15px;
+}
+/*Banner*/
+.banner{
+    background-image: url(../img/nature.jpg);
+    height: 400px;
+   
+    background-size: cover;
+    position: relative;
+    margin: 30px;
+}
+.banner__circle{
+    width: 300px;
+   height: 300px;
+   background-color:#832927 ;
+   color: white;
+   border-radius: 50%;
+   text-align: center;
+   opacity: 0.8;
+   position: absolute;
+   top:15px;
+   left: 300px;
+}
+.banner__circle p{
+    font-size: 20px;
+}
+.banner__circle p :first-child{
+    font-size: 30px;
+    margin: 50px 0 0;
+}
+.banner__circle p:nth-child(2){
+    font-size: 80px;
+    margin: 0;
+}
+/*SERVICES*/
+.services{
+    margin: 30px 0 10px;
+}
+.services__item h2{
+    margin: 10px 0;
+}
+.services__content{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.services__item{
+    float: left;
+    width: 33.33%;
+    
+}
+.services__item p{
+margin: 0;
+}
+.services__item i{
+    font-size: 40px;
+   
+}
+/*FOOTER*/
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer h2, .footer p{
+    margin: 0;
+}
+.footer h2{
+    font-size: 30px;
+}

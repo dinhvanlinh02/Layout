@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!------HEader-->
+    <header>
+        <nav>
+            <div class="img-nav">
+                <img src="./img/banner.png" alt="logo">
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li><a href="#">Trang chu</a></li>
+                    <li><a href="#">San pham</a></li>
+                    <li><a href="#">Lien he</a></li>
+                    <li><a href="#">Gioi thieu</a></li>
+                    
+                </ul>
+            
+            <form>
+                <input type="text" name="search" placeholder="Tim kiem san pham..."/>
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+            </form>
+        </div>
+        <!--The Modal-->
+        <button id="cart">
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+            Gio Hang
+        </button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gio hang</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">San pham</span>
+                        <span class="cart-price cart-header cart-column">Gia</span>
+                        <span class="cart-quantity cart-header cart-column">So luong</span>
+                    </div>
+
+<div class="cart-items">
+    <div class="modal-body">
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+            <span class="cart-price cart-header cart-column">Giá</span>
+            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sualai.jpg?v=1573720306000" width="100" height="100">
+                <span class="cart-item-title">Mũi Hàn 500</span>
+            </div>
+            <span class="cart-price cart-column">25000đ</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">Xóa</button>
+            </div>
+        </div>
+        <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="https://bizweb.dktcdn.net/thumb/large/100/228/168/products/sp1-a45a32a1-38d4-4a8a-9c37-e936013858b2.jpg?v=1575877003000" width="100" height="100">
+                <span class="cart-item-title">Máy Bơm Chìm Hộ Gia Đình QDX 1500W 220VAC 40L/1min H=8m</span>
+            </div>
+            <span class="cart-price cart-column">1599000đ</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="2">
+                <button class="btn btn-danger" type="button">Xóa</button>
+            </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Tổng Cộng:</strong>
+            <span class="cart-total-price">3223000VNĐ</span>
+        </div>
+</div>
+<div class="cart-total">
+    <strong class="cart-total-title">Tong cong</strong>
+    <span class="cart-total-price">0vnd</span>
+</div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close-footer">Dong</button>
+                <button type="button" class="btn btn-primary order">Thanh toan</button>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <!-----Content-->
+    <section class="wrapper">
+        <div class="products">
+            <ul>
+                <li class="main-product">
+                    <div class="img-product">
+                       <img class="img-prd"
+                        src="./img/prd1.webp" alt="product">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">123200d</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Them vao gio</button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                       <img class="img-prd"
+                        src="./img/prd2.webp" alt="product">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Trạm Hàn Hakko 942 75W 200-480*C 220VAC Cực Nóng</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">123200d</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Them vao gio</button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                       <img class="img-prd"
+                        src="./img/prd1.webp" alt="product">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Máy Bơm Chìm Hộ Gia Đình QDX 1500W 220VAC 40L/1min H=8m</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">34200d</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Them vao gio</button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                       <img class="img-prd"
+                        src="./img/prd4.webp" alt="product">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">65000d</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Them vao gio</button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                       <img class="img-prd"
+                        src="./img/prd1.webp" alt="product">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Raspberry Pi 3 E14 Model B Plus B+ 2.4G Bluetooth</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">105000d</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Them vao gio</button> 
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                       <img class="img-prd"
+                        src="./img/prd6.webp" alt="product">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Module ISD1760 Thu Âm Thanh - Phát Âm Thanh 75s</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">105000d</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Them vao gio</button> 
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!----Footer-->
+    <footer>
+        <div class="footer-item">   
+            <div class="img-footer">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="social-footer">
+                <li><a target="_blank" href="http://www.facebook.com/thanhlongdev">
+                    <i class="fab fa-facebook" aria-hidden="true"></i>
+                </a></li>
+                <li><a target="_blank" href="http://github.com/long1211">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a></li>
+            </div>
+        </div>
+       
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
